@@ -55,4 +55,102 @@ button, select {
     padding: 5px 10px;
     font-size: 1em;
 }
+/* ---------------- Carrusel general ---------------- */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Botones de navegación */
+.carousel-container .prev,
+.carousel-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.carousel-container .prev:hover,
+.carousel-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-container .prev {
+    left: 10px;
+}
+
+.carousel-container .next {
+    right: 10px;
+}
+
+/* Opcional: responsive */
+@media (max-width: 768px) {
+    .carousel-container .prev,
+    .carousel-container .next {
+        font-size: 1.5rem;
+        padding: 3px 8px;
+    }
+    /* Carrusel general */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Botones */
+.carousel-container .prev,
+.carousel-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-container .prev {
+    left: 10px;
+}
+
+.carousel-container .next {
+    right: 10px;
+}
 
