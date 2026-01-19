@@ -1,1 +1,58 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Apartamentos */
+article {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: #fff;
+}
+
+/* Botones y select */
+button, select {
+    padding: 5px 10px;
+    font-size: 1em;
+}
 
