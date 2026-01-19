@@ -1,1 +1,40 @@
+<section id="carrusel">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <!-- 30 imágenes -->
+            <img src="img/grandvalira1.jpg" alt="Grandvalira 1">
+            <img src="img/grandvalira2.jpg" alt="Grandvalira 2">
+            <img src="img/grandvalira3.jpg" alt="Grandvalira 3">
+            <img src="img/grandvalira4.jpg" alt="Grandvalira 4">
+            <img src="img/grandvalira5.jpg" alt="Grandvalira 5">
+            <img src="img/grandvalira6.jpg" alt="Grandvalira 6">
+            <img src="img/grandvalira7.jpg" alt="Grandvalira 7">
+            <img src="img/grandvalira8.jpg" alt="Grandvalira 8">
+            <img src="img/grandvalira9.jpg" alt="Grandvalira 9">
+            <img src="img/grandvalira10.jpg" alt="Grandvalira 10">
+            <img src="img/pleta1.jpg" alt="Pleta de Soldeu 1">
+            <img src="img/pleta2.jpg" alt="Pleta de Soldeu 2">
+            <img src="img/pleta3.jpg" alt="Pleta de Soldeu 3">
+            <img src="img/pleta4.jpg" alt="Pleta de Soldeu 4">
+            <img src="img/pleta5.jpg" alt="Pleta de Soldeu 5">
+            <img src="img/pleta6.jpg" alt="Pleta de Soldeu 6">
+            <img src="img/cerler1.jpg" alt="Cerler 1">
+            <img src="img/cerler2.jpg" alt="Cerler 2">
+            <img src="img/cerler3.jpg" alt="Cerler 3">
+            <img src="img/cerler4.jpg" alt="Cerler 4">
+            <img src="img/cerler5.jpg" alt="Cerler 5">
+            <img src="img/cerler6.jpg" alt="Cerler 6">
+            <img src="img/cerler7.jpg" alt="Cerler 7">
+            <img src="img/cerler8.jpg" alt="Cerler 8">
+            <img src="img/cerler9.jpg" alt="Cerler 9">
+            <img src="img/cerler10.jpg" alt="Cerler 10">
+            <img src="img/cerler11.jpg" alt="Cerler 11">
+            <img src="img/cerler12.jpg" alt="Cerler 12">
+            <img src="img/cerler13.jpg" alt="Cerler 13">
+            <img src="img/cerler14.jpg" alt="Cerler 14">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+</section>
 
