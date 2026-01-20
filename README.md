@@ -1,30 +1,38 @@
-# Apartamentos a pie de pistas de Grandvalira y Cerler
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-slide img');
 
-Sitio web moderno y responsivo para la promoción y reserva de apartamentos en las estaciones de esquí de Grandvalira (Andorra) y Cerler (España).
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
 
-## Características principales
+let counter = 0;
+const size = carouselImages[0].clientWidth;
 
-✨ **Diseño Mobile First**  
-- Completamente responsivo desde móvil hasta escritorio  
-- Optimizado para todas las pantallas  
+carouselSlide.style.transform = 'translateX(0px)';
 
-📱 **Carrusel de Fotos**  
-- 30 imágenes de alta calidad  
-- Navegación mediante botones anteriores/siguientes  
-- Reproducción automática cada 5 segundos  
+// Botón siguiente
+nextBtn.addEventListener('click', () => {
+    counter++;
+    if(counter >= carouselImages.length) counter = 0;
+    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+});
 
-🎨 **Interfaz moderna y colorida**  
-- Tipografía legible  
-- Paleta de colores azul y amarillo  
-- Apartamentos en tarjetas con sombra y bordes redondeados  
-- Links coloridos con efecto hover  
+// Botón anterior
+prevBtn.addEventListener('click', () => {
+    counter--;
+    if(counter < 0) counter = carouselImages.length - 1;
+    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+});
 
-💬 **Botón WhatsApp y teléfono flotante**  
-- Acceso rápido al contacto directo +34 620 419 157  
-- Disponible en todas las páginas  
+// Cambio automático cada 2 segundos
+setInterval(() => {
+    counter++;
+    if(counter >= carouselImages.length) counter = 0;
+    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+}, 2000);
 
-## Estructura del Proyecto
-
-
-
-
+// Ajuste tamaño al redimensionar ventana
+window.addEventListener('resize', () => {
+    carouselSlide.style.transition = 'none';
+    carouselSlide.style.transform = `translateX(${-carouselImages[0].clientWidth * counter}px)`;
+    setTimeout(() => { carouselSlide.style.transition = 'transform 0.5s ease-in-out'; }, 50);
+});
