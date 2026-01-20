@@ -5,7 +5,7 @@ const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 
 let counter = 0;
-const size = carouselImages[0].clientWidth;
+let size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(0px)';
 
@@ -32,7 +32,8 @@ setInterval(() => {
 
 // Ajuste tamaño al redimensionar ventana
 window.addEventListener('resize', () => {
+    size = carouselImages[0].clientWidth;
     carouselSlide.style.transition = 'none';
-    carouselSlide.style.transform = `translateX(${-carouselImages[0].clientWidth * counter}px)`;
+    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
     setTimeout(() => { carouselSlide.style.transition = 'transform 0.5s ease-in-out'; }, 50);
 });
