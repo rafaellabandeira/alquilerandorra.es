@@ -6,39 +6,50 @@ const nextBtn = document.querySelector('.carousel-btn.next');
 let current = 0;
 const total = slides.length;
 
-// Función para mostrar slide
+// Mostrar slide actual
 function showSlide(index) {
     slides.forEach((slide, i) => {
+        slide.style.display = 'none';
         slide.classList.remove('active');
-        if(i === index) slide.classList.add('active');
+        if(i === index) {
+            slide.style.display = 'block';
+            slide.classList.add('active');
+        }
     });
 }
 
-// Función siguiente
+// Siguiente slide
 function nextSlide() {
     current++;
     if(current >= total) current = 0;
     showSlide(current);
 }
 
-// Función anterior
+// Slide anterior
 function prevSlide() {
     current--;
     if(current < 0) current = total -1;
     showSlide(current);
 }
 
-// Eventos botones
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
+// Inicializar carrusel mostrando la primera
+showSlide(current);
+
+// Eventos de botones
+nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+});
+prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+});
 
 // Autoplay cada 2 segundos
 let slideInterval = setInterval(nextSlide, 2000);
 
-// Opcional: reiniciar intervalo al usar botones
-[nextBtn, prevBtn].forEach(btn => {
-    btn.addEventListener('click', () => {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, 2000);
-    });
-});
+// Reiniciar intervalo al usar botones
+function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 2000);
+}
