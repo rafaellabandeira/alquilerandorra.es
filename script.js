@@ -9,20 +9,30 @@ const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(0px)';
 
+// Botón siguiente
 nextBtn.addEventListener('click', () => {
-    if (counter >= carouselImages.length - 1) counter = -1;
     counter++;
+    if(counter >= carouselImages.length) counter = 0;
     carouselSlide.style.transform = `translateX(${-size * counter}px)`;
 });
 
+// Botón anterior
 prevBtn.addEventListener('click', () => {
-    if (counter <= 0) counter = carouselImages.length;
     counter--;
+    if(counter < 0) counter = carouselImages.length - 1;
     carouselSlide.style.transform = `translateX(${-size * counter}px)`;
 });
 
+// Cambio automático cada 2 segundos
 setInterval(() => {
-    if (counter >= carouselImages.length - 1) counter = -1;
     counter++;
+    if(counter >= carouselImages.length) counter = 0;
     carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-}, 5000);
+}, 2000);
+
+// Ajuste tamaño al redimensionar ventana
+window.addEventListener('resize', () => {
+    carouselSlide.style.transition = 'none';
+    carouselSlide.style.transform = `translateX(${-carouselImages[0].clientWidth * counter}px)`;
+    setTimeout(() => { carouselSlide.style.transition = 'transform 0.5s ease-in-out'; }, 50);
+});
