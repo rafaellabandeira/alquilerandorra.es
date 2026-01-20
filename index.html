@@ -1,95 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartamentos a pie de pistas de Grandvalira y Cerler</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartamentos a pie de pistas de Grandvalira y Cerler</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <h1>Apartamentos a pie de pistas</h1>
-        </div>
-        <div class="header-right">
-            <a href="tel:+34620419157">📞 620 419 157</a>
-            <a href="https://wa.me/34620419157" target="_blank">💬 WhatsApp</a>
-        </div>
-    </header>
+<header>
+  <div class="header-left">
+    <h1>Apartamentos a pie de pistas</h1>
+  </div>
+  <div class="header-right">
+    <a href="tel:+34620419157">📞 620 419 157</a>
+    <a href="https://wa.me/34620419157" target="_blank">💬 WhatsApp</a>
+  </div>
+</header>
 
-    <main>
-        <!-- Carrusel -->
-        <section class="carousel">
-            <div class="carousel-wrapper">
-                <!-- GRANDVALIRA -->
-                <div class="carousel-slide active"><img src="img/grandvalira1.jpg" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/grandvalira2.jpg" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/grandvalira3.jpg" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/grandvalira4.jpg" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/grandvalira5.jpg" loading="lazy"></div>
+<main>
+  <!-- CARRUSEL PREMIUM -->
+  <section class="carousel">
+    <div class="carousel-wrapper">
+      <!-- GRANDVALIRA -->
+      <div class="carousel-slide active"><img src="img/grandvalira1.jpg" loading="lazy"></div>
+      <div class="carousel-slide"><img src="img/grandvalira2.jpg" loading="lazy"></div>
+      <div class="carousel-slide"><img src="img/grandvalira3.jpg" loading="lazy"></div>
+      <div class="carousel-slide"><img src="img/grandvalira4.jpg" loading="lazy"></div>
+      <div class="carousel-slide"><img src="img/grandvalira5.jpg" loading="lazy"></div>
 
-                <!-- PLETA DE SOLDEU -->
-                <div class="carousel-slide"><img src="img/pleta1.jpg" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/pleta2.jpg" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/pleta3.jpg" loading="lazy"></div>
+      <!-- PLETA DE SOLDEU -->
+      <div class="carousel-slide"><img src="img/pleta1.jpg" loading="lazy"></div>
+      <div class="carousel-slide"><img src="img/pleta2.jpg" loading="lazy"></div>
+      <div class="carousel-slide"><img src="img/pleta3.jpg" loading="lazy"></div>
 
-                <!-- CERLER -->
-                <div class="carousel-slide"><img src="img/cerler1.jpg" loading="lazy"></div>
-                <div class="carousel-slide"><img src="img/cerler2.jpg" loading="lazy"></div>
+      <!-- CERLER -->
+      <div class="carousel-slide"><img src="img/cerler1.jpg" loading="lazy"></div>
+      <div class="carousel-slide"><img src="img/cerler2.jpg" loading="lazy"></div>
 
-                <button class="carousel-btn prev">‹</button>
-                <button class="carousel-btn next">›</button>
-                <div class="carousel-dots"></div>
-            </div>
-        </section>
-
-        <!-- Apartamentos (resumen) -->
-        <section id="apartamentos">
-            <h2>Nuestros Apartamentos</h2>
-
-            <article>
-                <h3>Apartamento Pleta de Soldeu · Edificio B · B-3-4</h3>
-                <p>Capacidad: 4 personas | Grandvalira – Soldeu</p>
-                <p>❄️ A pocos metros de las pistas | ☀️ En verano rutas de montaña</p>
-                <p>🔗 <a href="https://www.airbnb.es/rooms/15004000" target="_blank">Reservar en Airbnb</a></p>
-            </article>
-
-            <!-- Repetir artículos para los 8 apartamentos -->
-        </section>
-    </main>
-
-    <!-- Footer legal -->
-    <footer>
-        <p>© 2026 alquilerandorra.es</p>
-        <p>
-            <a href="#" class="legal-btn" data-target="aviso-legal">Aviso Legal</a> |
-            <a href="#" class="legal-btn" data-target="privacidad">Política de Privacidad</a> |
-            <a href="#" class="legal-btn" data-target="cookies">Política de Cookies</a>
-        </p>
-    </footer>
-
-    <!-- Modales legales -->
-    <div class="modal" id="aviso-legal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe src="aviso-legal.html"></iframe>
-        </div>
+      <button class="carousel-btn prev">‹</button>
+      <button class="carousel-btn next">›</button>
+      <div class="carousel-dots"></div>
     </div>
+  </section>
 
-    <div class="modal" id="privacidad">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe src="privacidad.html"></iframe>
-        </div>
-    </div>
+  <!-- APARTAMENTOS -->
+  <section id="apartamentos">
+    <h2>Nuestros Apartamentos</h2>
 
-    <div class="modal" id="cookies">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe src="cookies.html"></iframe>
-        </div>
-    </div>
+    <article>
+      <h3>Apartamento Pleta de Soldeu · Edificio B · B-3-4</h3>
+      <p>Capacidad: 4 personas | Grandvalira – Soldeu</p>
+      <p>❄️ A pocos metros de las pistas | ☀️ En verano rutas de montaña</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/15004000" target="_blank">Reservar en Airbnb</a></p>
+    </article>
 
-    <script src="script.js"></script>
+    <article>
+      <h3>Apartamento Pleta de Soldeu · Edificio C · C-2-1</h3>
+      <p>Capacidad: 5 personas | Vistas a la montaña</p>
+      <p>❄️ Ubicación privilegiada en Grandvalira | ☀️ Senderismo y rutas de montaña en verano</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/14928857" target="_blank">Reservar en Airbnb</a></p>
+    </article>
+
+    <article>
+      <h3>Apartamento Pleta de Soldeu · Edificio 3 · 3-2-7</h3>
+      <p>Capacidad: 5 personas</p>
+      <p>❄️ Perfecto para grupos de esquí | ☀️ Punto de partida para rutas de montaña</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/16438941" target="_blank">Reservar en Airbnb</a></p>
+    </article>
+
+    <article>
+      <h3>Ático Edificio Malva · 7-2</h3>
+      <p>Capacidad: 5 personas | Maravillosas vistas a las pistas</p>
+      <p>☀️ Senderos de montaña señalizados en verano</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/30303046" target="_blank">Reservar en Airbnb</a></p>
+    </article>
+
+    <article>
+      <h3>Apartamento Edificio El Tarter · 4-B</h3>
+      <p>Capacidad: 3 personas | Vistas a las pistas de esquí</p>
+      <p>☀️ Rutas de montaña y naturaleza en verano</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/4256746" target="_blank">Reservar en Airbnb</a></p>
+    </article>
+
+    <article>
+      <h3>Apartamento Edificio L’Avet · 2-1</h3>
+      <p>Capacidad: 4 personas | Bonitas vistas a las pistas</p>
+      <p>☀️ Entorno ideal para senderismo estival</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/15831723" target="_blank">Reservar en Airbnb</a></p>
+    </article>
+
+    <article>
+      <h3>Chalet Edificio Bellesguard · 1-1</h3>
+      <p>Capacidad: 6 personas | Maravillosas vistas a las pistas</p>
+      <p>☀️ Numerosas rutas de montaña marcadas en verano</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/29563534" target="_blank">Reservar en Airbnb</a></p>
+    </article>
+
+    <article>
+      <h3>Apartamento Edificio Aiguallur Cerler · A-4</h3>
+      <p>Capacidad: 4 personas | Vistas a pistas y al valle de Benasque</p>
+      <p>☀️ Rutas de montaña únicas en verano</p>
+      <p>🔗 <a href="https://www.airbnb.es/rooms/1096091527741897588" target="_blank">Reservar en Airbnb</a></p>
+    </article>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 alquilerandorra.es</p>
+  <p>
+    <a href="#" class="legal-btn" data-target="aviso-legal">Aviso Legal</a> |
+    <a href="#" class="legal-btn" data-target="privacidad">Política de Privacidad</a> |
+    <a href="#" class="legal-btn" data-target="cookies">Política de Cookies</a>
+  </p>
+</footer>
+
+<!-- MODALES LEGALES -->
+<div class="modal" id="aviso-legal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="aviso-legal.html"></iframe>
+  </div>
+</div>
+
+<div class="modal" id="privacidad">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="privacidad.html"></iframe>
+  </div>
+</div>
+
+<div class="modal" id="cookies">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="cookies.html"></iframe>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
