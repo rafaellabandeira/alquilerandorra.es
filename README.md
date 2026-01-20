@@ -1,38 +1,35 @@
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelectorAll('.carousel-slide img');
+# Apartamentos a pie de pistas de Grandvalira y Cerler
 
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+Sitio web moderno y responsivo para los **apartamentos turísticos a pie de pistas** en Grandvalira (Andorra) y Cerler (Huesca).  
 
-let counter = 0;
-const size = carouselImages[0].clientWidth;
+---
 
-carouselSlide.style.transform = 'translateX(0px)';
+## ✨ Características principales
 
-// Botón siguiente
-nextBtn.addEventListener('click', () => {
-    counter++;
-    if(counter >= carouselImages.length) counter = 0;
-    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-});
+### 1. Carrusel de fotos
+- 30 imágenes de alta calidad de Grandvalira, Pleta de Soldeu y Cerler.
+- Reproducción automática cada 2 segundos.
+- Botones de navegación prev/next.
+- Responsive: se adapta a cualquier tamaño de pantalla.
 
-// Botón anterior
-prevBtn.addEventListener('click', () => {
-    counter--;
-    if(counter < 0) counter = carouselImages.length - 1;
-    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-});
+### 2. Apartamentos en tarjetas
+- 8 apartamentos diferenciados en **tarjetas independientes**.
+- Información clara: nombre, capacidad, vistas y rutas de montaña.
+- Enlaces directos a **Airbnb** para reservas.
+- Diseño moderno con hover animado y sombra suave.
 
-// Cambio automático cada 2 segundos
-setInterval(() => {
-    counter++;
-    if(counter >= carouselImages.length) counter = 0;
-    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-}, 2000);
+### 3. Contacto rápido
+- Teléfono directo: 📞 +34 620 419 157
+- WhatsApp: 💬 acceso directo desde la web.
+- Siempre accesible desde el header.
 
-// Ajuste tamaño al redimensionar ventana
-window.addEventListener('resize', () => {
-    carouselSlide.style.transition = 'none';
-    carouselSlide.style.transform = `translateX(${-carouselImages[0].clientWidth * counter}px)`;
-    setTimeout(() => { carouselSlide.style.transition = 'transform 0.5s ease-in-out'; }, 50);
-});
+### 4. Footer y textos legales
+- Aviso Legal
+- Política de Privacidad
+- Política de Cookies
+- Todos los enlaces abiertos en nuevas pestañas para mejor experiencia.
+
+---
+
+## 🏗 Estructura del Proyecto
+
