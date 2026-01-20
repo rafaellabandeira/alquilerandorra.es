@@ -1,43 +1,29 @@
 /* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
+  font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
   background-color: #003366;
-  color: #fff;
-  padding: 20px;
-}
-
-.header-right {
-  margin-top: 10px;
+  color: #ffcc00;
+  flex-wrap: wrap;
 }
 
 header a {
-  color: #fff;
+  color: #ffcc00;
   text-decoration: none;
   margin-left: 15px;
-  font-weight: bold;
 }
 
-header a:hover {
-  text-decoration: underline;
-}
-
-/* Título principal */
 .main-title {
   font-size: 3rem;
   color: #ffcc00;
@@ -47,144 +33,54 @@ header a:hover {
   text-align: center;
   box-shadow: 4px 4px 15px rgba(0,0,0,0.6);
   display: inline-block;
-  margin: 10px auto;
-  line-height: 1.3;
-  font-family: 'Arial Black', Arial, sans-serif;
-}
-
-/* Carrusel */
-.carousel {
-  position: relative;
-  max-width: 100%;
   margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
+  font-family: 'Arial Black', Arial, sans-serif;
+  line-height: 1.3;
 }
 
-.carousel-wrapper {
-  position: relative;
-}
-
-.carousel-slide {
-  display: none;
-  width: 100%;
-}
-
-.carousel-slide.active {
+.main-title .subtitle {
   display: block;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 10px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
+/* CARRUSEL */
+.carousel { max-width: 100%; overflow: hidden; position: relative; margin: 20px 0; }
+.carousel-wrapper { position: relative; }
+.carousel-slide { display: none; width: 100%; }
+.carousel-slide.active { display: block; }
+.carousel-slide img { width: 100%; display: block; border-radius: 8px; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color:#fff; border:none; padding:10px; cursor:pointer; font-size:2rem; border-radius:50%; }
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
 
-/* Botones carrusel */
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
-  color: #fff;
-  border: none;
-  font-size: 2rem;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-}
+/* APARTAMENTOS */
+.apartamentos-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:20px; }
+.apartamento-card { background-color:#fff; padding:15px; border-radius:8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+.apartamento-card h3 { margin-bottom:10px; color:#003366; }
+.apartamento-card p { margin-bottom:8px; }
+.apartamento-card a { color:#ff6600; text-decoration:none; font-weight:bold; }
 
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
-}
-
-.carousel-btn:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Apartamentos grid */
-.apartamentos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.apartamento-card {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.apartamento-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.apartamento-card h3 {
-  margin-bottom: 10px;
-  color: #003366;
-}
-
-.apartamento-card p {
-  margin-bottom: 5px;
-}
-
-.apartamento-card a {
-  color: #ff6600;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.apartamento-card a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background-color: #003366;
-  color: #fff;
-  text-align: center;
-  padding: 15px 20px;
-  margin-top: 30px;
-}
-
-footer a {
-  color: #ffcc00;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Botón flotante WhatsApp */
+/* WHATSAPP FLOTANTE */
 .whatsapp-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 60px;
-  z-index: 100;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  transition: background 0.3s;
+  background-color:#25d366;
+  color:white;
+  border-radius:50%;
+  padding:15px;
+  text-align:center;
+  font-size:1.5rem;
+  z-index:1000;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
 }
+.whatsapp-float:hover { transform: scale(1.1); }
 
-.whatsapp-float:hover {
-  background-color: #1ebe57;
-}
+/* FOOTER */
+footer { text-align:center; padding:15px; background:#003366; color:#ffcc00; margin-top:30px; }
+footer a { color:#ffcc00; text-decoration:none; margin:0 5px; }
