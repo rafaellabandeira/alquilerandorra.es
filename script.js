@@ -1,55 +1,55 @@
-// Selección de slides y botones
+// Selección de elementos
 const slides = document.querySelectorAll('.carousel-slide');
 const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
 
-let current = 0;
-const total = slides.length;
+let currentIndex = 0;
+const totalSlides = slides.length;
+const intervalTime = 2000; // 2 segundos
+let slideInterval;
 
-// Mostrar slide actual
+// Función para mostrar la diapositiva actual
 function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.display = 'none';
-        slide.classList.remove('active');
-        if(i === index) {
-            slide.style.display = 'block';
-            slide.classList.add('active');
-        }
-    });
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
 }
 
-// Siguiente slide
+// Función para ir a la siguiente diapositiva
 function nextSlide() {
-    current++;
-    if(current >= total) current = 0;
-    showSlide(current);
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
 }
 
-// Slide anterior
+// Función para ir a la diapositiva anterior
 function prevSlide() {
-    current--;
-    if(current < 0) current = total -1;
-    showSlide(current);
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  showSlide(currentIndex);
 }
 
-// Inicializar carrusel mostrando la primera
-showSlide(current);
+// Función para iniciar el carrusel automático
+function startCarousel() {
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
 
-// Eventos de botones
+// Función para detener el carrusel automático
+function stopCarousel() {
+  clearInterval(slideInterval);
+}
+
+// Eventos de los botones
 nextBtn.addEventListener('click', () => {
-    nextSlide();
-    resetInterval();
+  nextSlide();
+  stopCarousel();
+  startCarousel(); // reinicia intervalo
 });
+
 prevBtn.addEventListener('click', () => {
-    prevSlide();
-    resetInterval();
+  prevSlide();
+  stopCarousel();
+  startCarousel(); // reinicia intervalo
 });
 
-// Autoplay cada 2 segundos
-let slideInterval = setInterval(nextSlide, 2000);
-
-// Reiniciar intervalo al usar botones
-function resetInterval() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, 2000);
-}
+// Inicialización
+showSlide(currentIndex);
+startCarousel();
