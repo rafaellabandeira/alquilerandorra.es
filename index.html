@@ -3,176 +3,298 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apartamentos a pie de pistas en Grandvalira y Cerler</title>
+
+  <title>Alquiler Andorra | Apartamentos a pie de pistas</title>
+
   <meta name="description" content="Apartamentos a pie de pistas en Grandvalira y Cerler. Disfruta de la nieve en invierno y la montaña en verano. Reserva directa.">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="keywords" content="alquiler andorra, grandvalira, cerler, apartamentos esquí, pie de pistas">
+  <link rel="canonical" href="https://alquilerandorra.es">
+  <!-- <link rel="icon" href="images/favicon.svg" type="image/svg+xml"> -->
+  
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 
-<header>
-  <div class="header">
-    <h1 class="main-title">
-     Andorra-Grandvalira  Huesca-Cerler  Apartamentos a pie de pistas
-      <span class="subtitle">❄️ Nieve, esquí y comodidad en invierno</span>
-      <span class="subtitle">☀️ Montaña, rutas y naturaleza en verano</span>
-      <span href="tel:+34620419157">📞 620 419 157</span>
-    <span href="https://wa.me/34620419157" target="_blank">💬 WhatsApp</span>
-    </h1>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">🏔️ Alquiler Andorra</a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#" class="nav-link">Inicio</a></li>
+      <li><a href="#apartamentos" class="nav-link">Apartamentos</a></li>
+      <li><a href="#galeria" class="nav-link">Galería</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="header-inner">
+    <div class="header-text">
+      <h1 class="hero-title">Apartamentos en Andorra y Cerler · <span>A pie de pistas</span></h1>
+      <p class="hero-sub">❄️ Nieve, esquí y comodidad en invierno · ☀️ Montaña, rutas y naturaleza en verano</p>
+    </div>
   </div>
 </header>
 
-<main>
+<section>
+  <h2>Tu experiencia en la montaña</h2>
+  <p>
+    Bienvenido a <strong>Alquiler Andorra</strong>. Ofrecemos una selección de apartamentos exclusivos situados estratégicamente a pie de pistas en Grandvalira (Andorra) y Cerler (Huesca).
+    Alojamientos totalmente equipados para que disfrutes tanto de la temporada de esquí como de la tranquilidad de la montaña en verano.
+  </p>
+</section>
 
-  <!-- CARRUSEL -->
-  <section class="carousel">
-    <div class="carousel-wrapper">
-      <div class="carousel-wrapper">
-  <img class="carousel-img active" src="img/grandvalira1.jpg" alt="Grandvalira 1">
-  <img class="carousel-img" src="img/grandvalira2.jpg" alt="Grandvalira 2">
-  <img class="carousel-img" src="img/grandvalira3.jpg" alt="Grandvalira 3">
-  <img class="carousel-img" src="img/grandvalira4.jpg" alt="Grandvalira 4">
-  <img class="carousel-img" src="img/grandvalira5.jpg" alt="Grandvalira 5">
-  <img class="carousel-img" src="img/grandvalira6.jpg" alt="Grandvalira 6">
-  <img class="carousel-img" src="img/grandvalira7.jpg" alt="Grandvalira 7">
-  <img class="carousel-img" src="img/grandvalira8.jpg" alt="Grandvalira 8">
-  <img class="carousel-img" src="img/grandvalira9.jpg" alt="Grandvalira 9">
-  <img class="carousel-img" src="img/grandvalira10.jpg" alt="Grandvalira 10">
+<section id="apartamentos">
+  <h2>Nuestros Apartamentos</h2>
 
-  <img class="carousel-img" src="img/pleta1.jpg" alt="Pleta de Soldeu 1">
-  <img class="carousel-img" src="img/pleta2.jpg" alt="Pleta de Soldeu 2">
-  <img class="carousel-img" src="img/pleta3.jpg" alt="Pleta de Soldeu 3">
-  <img class="carousel-img" src="img/pleta4.jpg" alt="Pleta de Soldeu 4">
-  <img class="carousel-img" src="img/pleta5.jpg" alt="Pleta de Soldeu 5">
-  <img class="carousel-img" src="img/pleta6.jpg" alt="Pleta de Soldeu 6">
-
-  <img class="carousel-img" src="img/cerler1.jpg" alt="Cerler 1">
-  <img class="carousel-img" src="img/cerler2.jpg" alt="Cerler 2">
-  <img class="carousel-img" src="img/cerler3.jpg" alt="Cerler 3">
-  <img class="carousel-img" src="img/cerler4.jpg" alt="Cerler 4">
-  <img class="carousel-img" src="img/cerler5.jpg" alt="Cerler 5">
-  <img class="carousel-img" src="img/cerler6.jpg" alt="Cerler 6">
-  <img class="carousel-img" src="img/cerler7.jpg" alt="Cerler 7">
-  <img class="carousel-img" src="img/cerler8.jpg" alt="Cerler 8">
-  <img class="carousel-img" src="img/cerler9.jpg" alt="Cerler 9">
-  <img class="carousel-img" src="img/cerler10.jpg" alt="Cerler 10">
-  <img class="carousel-img" src="img/cerler11.jpg" alt="Cerler 11">
-  <img class="carousel-img" src="img/cerler12.jpg" alt="Cerler 12">
-  <img class="carousel-img" src="img/cerler13.jpg" alt="Cerler 13">
-  <img class="carousel-img" src="img/cerler14.jpg" alt="Cerler 14">
-
-  <!-- Botones del carrusel -->
-  <button class="carousel-btn prev">‹</button>
-  <button class="carousel-btn next">›</button>
-</div>
-
+  <div class="apartamentos-grid">
+    
+    <!-- Apartamento 1 -->
+    <div class="apartamento-card">
+      <h3>Soldeu-Andorra</h3>
+      <h3>Pleta de Soldeu · B-3-4</h3>
+      <p>👥 4 personas · Soldeu</p>
+      <p>❄️ A pie de pistas</p>
+      <p>🎿 Ideal para esquí</p>
+      <p>☀️ Rutas de montaña, senderismo</p>
+      <a href="https://www.airbnb.es/rooms/15004000" target="_blank" rel="noopener">Reservar en Airbnb</a>
     </div>
-  </section>
 
-  <!-- APARTAMENTOS -->
-  <section id="apartamentos">
-    <h2>Nuestros apartamentos</h2>
-
-    <div class="apartamentos-grid">
-
-      <div class="apartamento-card">
-        <h3>Soldeu-Andorra</h3>
-        <h3>Pleta de Soldeu · B-3-4</h3>
-        <p>👥 4 personas · Soldeu</p>
-        <p>❄️ A pie de pistas</p>
-        <p>🎿 Ideal para esquí</p>
-        <p>☀️ Rutas de montaña, senderismo</p>
-        <a href="https://www.airbnb.es/rooms/15004000" target="_blank">Reservar en Airbnb</a>
-      </div>
-
-      <div class="apartamento-card">
-        <h3>Soldeu-Andorra</h3>
-        <h3>Pleta de Soldeu · C-2-1</h3>
-        <p>👥 5 personas</p>
-        <p>❄️ A pie de pistas</p>
-        <p>🌄 Vistas a la montaña</p>
-        <p>☀️ Senderismo</p>
-        <a href="https://www.airbnb.es/rooms/14928857" target="_blank">Reservar en Airbnb</a>
-      </div>
-
-      <div class="apartamento-card">
-        <h3>Soldeu-Andorra</h3>
-        <h3>Pleta de Soldeu · 3-2-7</h3>
-        <p>👥 5 personas</p>
-        <p>🎿 Ideal para esquí</p>
-        <p>❄️ Cercano a pistas</p>
-        <p>☀️ Rutas señalizadas</p>
-        <a href="https://www.airbnb.es/rooms/16438941" target="_blank">Reservar en Airbnb</a>
-      </div>
-
-      <div class="apartamento-card">
-        <h3>El Tarter-Andorra</h3>
-        <h3>Ático Edificio Malva</h3>
-        <p>👥 5 personas</p>
-        <p>❄️ A pie de pistas</p>
-        <p>🎿 Frente a pistas</p>
-        <p>🌄 Vistas a la montaña</p>
-        <p>☀️ Senderos y rutas de montaña</p>
-        <a href="https://www.airbnb.es/rooms/30303046" target="_blank">Reservar en Airbnb</a>
-      </div>
-
-      <div class="apartamento-card">
-        <h3>El Tarter-Andorra</h3>
-        <h3>El Tarter · 4-B</h3>
-        <p>👥 3 personas</p>
-        <p>🎿 Vistas a pistas</p>
-        <p>🌄 Vistas a la montaña</p>
-        <p>☀️ Valle y naturaleza</p>
-        <a href="https://www.airbnb.es/rooms/4256746" target="_blank">Reservar en Airbnb</a>
-      </div>
-
-      <div class="apartamento-card">
-        <h3>El Tarter-Andorra</h3>
-        <h3>L’Avet · 2-1</h3>
-        <p>👥 4 personas</p>
-        <p>🎿 Frente a pistas</p>
-        <p>🌄 Vistas a la montaña</p>
-        <p>☀️ Senderismo, rutas de montaña</p>
-        <a href="https://www.airbnb.es/rooms/15831723" target="_blank">Reservar en Airbnb</a>
-      </div>
-
-      <div class="apartamento-card">
-        <h3>El Tarter-Andorra</h3>
-        <h3>Bellesguard · Chalet</h3>
-        <p>👥 6 personas</p>
-        <p>🎿 Grandes vistas</p>
-        <p>🎿 Frente a pistas</p>
-        <p>🌄 Vistas a la montaña</p>
-        <p>☀️ Rutas de montaña</p>
-        <a href="https://www.airbnb.es/rooms/29563534" target="_blank">Reservar en Airbnb</a>
-      </div>
-
-      <div class="apartamento-card">
-        <h3>Cerler-Huesca</h3>
-        <h3>Aiguallur Cerler · A-4</h3>
-        <p>👥 4 personas</p>
-        <p>🎿 Vistas al valle</p>
-        <p>🎿 Grandes vistas a pistas</p>
-        <p>🌄 Vistas a la montaña</p>
-        <p>☀️ Valle de Benasque en verano</p>
-        <a href="https://www.airbnb.es/rooms/1096091527741897588" target="_blank">Reservar en Airbnb</a>
-      </div>
-
+    <!-- Apartamento 2 -->
+    <div class="apartamento-card">
+      <h3>Soldeu-Andorra</h3>
+      <h3>Pleta de Soldeu · C-2-1</h3>
+      <p>👥 5 personas</p>
+      <p>❄️ A pie de pistas</p>
+      <p>🌄 Vistas a la montaña</p>
+      <p>☀️ Senderismo</p>
+      <a href="https://www.airbnb.es/rooms/14928857" target="_blank" rel="noopener">Reservar en Airbnb</a>
     </div>
-  </section>
 
-</main>
+    <!-- Apartamento 3 -->
+    <div class="apartamento-card">
+      <h3>Soldeu-Andorra</h3>
+      <h3>Pleta de Soldeu · 3-2-7</h3>
+      <p>👥 5 personas</p>
+      <p>🎿 Ideal para esquí</p>
+      <p>❄️ Cercano a pistas</p>
+      <p>☀️ Rutas señalizadas</p>
+      <a href="https://www.airbnb.es/rooms/16438941" target="_blank" rel="noopener">Reservar en Airbnb</a>
+    </div>
+
+    <!-- Apartamento 4 -->
+    <div class="apartamento-card">
+      <h3>El Tarter-Andorra</h3>
+      <h3>Ático Edificio Malva</h3>
+      <p>👥 5 personas</p>
+      <p>❄️ A pie de pistas</p>
+      <p>🎿 Frente a pistas</p>
+      <p>🌄 Vistas a la montaña</p>
+      <p>☀️ Senderos y rutas de montaña</p>
+      <a href="https://www.airbnb.es/rooms/30303046" target="_blank" rel="noopener">Reservar en Airbnb</a>
+    </div>
+
+    <!-- Apartamento 5 -->
+    <div class="apartamento-card">
+      <h3>El Tarter-Andorra</h3>
+      <h3>El Tarter · 4-B</h3>
+      <p>👥 3 personas</p>
+      <p>🎿 Vistas a pistas</p>
+      <p>🌄 Vistas a la montaña</p>
+      <p>☀️ Valle y naturaleza</p>
+      <a href="https://www.airbnb.es/rooms/4256746" target="_blank" rel="noopener">Reservar en Airbnb</a>
+    </div>
+
+    <!-- Apartamento 6 -->
+    <div class="apartamento-card">
+      <h3>El Tarter-Andorra</h3>
+      <h3>L’Avet · 2-1</h3>
+      <p>👥 4 personas</p>
+      <p>🎿 Frente a pistas</p>
+      <p>🌄 Vistas a la montaña</p>
+      <p>☀️ Senderismo, rutas de montaña</p>
+      <a href="https://www.airbnb.es/rooms/15831723" target="_blank" rel="noopener">Reservar en Airbnb</a>
+    </div>
+
+    <!-- Apartamento 7 -->
+    <div class="apartamento-card">
+      <h3>El Tarter-Andorra</h3>
+      <h3>Bellesguard · Chalet</h3>
+      <p>👥 6 personas</p>
+      <p>🎿 Grandes vistas</p>
+      <p>🎿 Frente a pistas</p>
+      <p>🌄 Vistas a la montaña</p>
+      <p>☀️ Rutas de montaña</p>
+      <a href="https://www.airbnb.es/rooms/29563534" target="_blank" rel="noopener">Reservar en Airbnb</a>
+    </div>
+
+    <!-- Apartamento 8 -->
+    <div class="apartamento-card">
+      <h3>Cerler-Huesca</h3>
+      <h3>Aiguallur Cerler · A-4</h3>
+      <p>👥 4 personas</p>
+      <p>🎿 Vistas al valle</p>
+      <p>🎿 Grandes vistas a pistas</p>
+      <p>🌄 Vistas a la montaña</p>
+      <p>☀️ Valle de Benasque en verano</p>
+      <a href="https://www.airbnb.es/rooms/1096091527741897588" target="_blank" rel="noopener">Reservar en Airbnb</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Galería de Fotos</h2>
+  
+  <div class="carousel-container">
+    <div class="carousel">
+      <!-- Grandvalira Images -->
+      <div class="carousel-slide active">
+        <img src="img/grandvalira1.jpg" alt="Grandvalira 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira2.jpg" alt="Grandvalira 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira3.jpg" alt="Grandvalira 3">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira4.jpg" alt="Grandvalira 4">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira5.jpg" alt="Grandvalira 5">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira6.jpg" alt="Grandvalira 6">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira7.jpg" alt="Grandvalira 7">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira8.jpg" alt="Grandvalira 8">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira9.jpg" alt="Grandvalira 9">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/grandvalira10.jpg" alt="Grandvalira 10">
+      </div>
+
+      <!-- Pleta Images -->
+      <div class="carousel-slide">
+        <img src="img/pleta1.jpg" alt="Pleta de Soldeu 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/pleta2.jpg" alt="Pleta de Soldeu 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/pleta3.jpg" alt="Pleta de Soldeu 3">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/pleta4.jpg" alt="Pleta de Soldeu 4">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/pleta5.jpg" alt="Pleta de Soldeu 5">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/pleta6.jpg" alt="Pleta de Soldeu 6">
+      </div>
+
+      <!-- Cerler Images -->
+      <div class="carousel-slide">
+        <img src="img/cerler1.jpg" alt="Cerler 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler2.jpg" alt="Cerler 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler3.jpg" alt="Cerler 3">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler4.jpg" alt="Cerler 4">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler5.jpg" alt="Cerler 5">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler6.jpg" alt="Cerler 6">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler7.jpg" alt="Cerler 7">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler8.jpg" alt="Cerler 8">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler9.jpg" alt="Cerler 9">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler10.jpg" alt="Cerler 10">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler11.jpg" alt="Cerler 11">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler12.jpg" alt="Cerler 12">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler13.jpg" alt="Cerler 13">
+      </div>
+      <div class="carousel-slide">
+        <img src="img/cerler14.jpg" alt="Cerler 14">
+      </div>
+    </div>
+    
+    <button class="carousel-button prev">❮</button>
+    <button class="carousel-button next">❯</button>
+    
+    <div class="carousel-indicators">
+      <!-- Generated indicators for some slides to avoid cluttering or just a few -->
+      <div class="indicator active"></div>
+      <div class="indicator"></div>
+      <div class="indicator"></div>
+      <div class="indicator"></div>
+      <div class="indicator"></div>
+    </div>
+  </div>
+
+  <p style="text-align: center; font-size: 14px; color: #999; margin-top: 16px;">
+    Desliza o usa los botones para ver más fotos
+  </p>
+</section>
+
+<section id="contacto">
+  <h2>Contacto y Reservas</h2>
+  <p>
+    Para cualquier consulta o reserva directa, contáctanos por WhatsApp.
+  </p>
+  <p>
+    📱 <a href="https://wa.me/34620419157">WhatsApp 620 419 157</a>
+  </p>
+</section>
 
 <footer>
-  <p>© 2026 alquilerandorra.es</p>
+  <p>© 2026 Alquiler Andorra</p>
   <p>
-    <a href="aviso-legal.html">Aviso Legal</a> ·
-    <a href="privacidad.html">Privacidad</a> ·
-    <a href="cookies.html">Cookies</a>
+    <a href="aviso-legal.html">Aviso Legal</a> |
+    <a href="privacidad.html">Política de Privacidad</a> |
+    <a href="cookies.html">Política de Cookies</a>
   </p>
 </footer>
 
-<a href="https://wa.me/34620419157" class="whatsapp-float" target="_blank">💬</a>
+<a class="whatsapp" href="https://wa.me/34620419157" title="Contacta por WhatsApp" target="_blank">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+  </svg>
+</a>
 
-<script src="script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
