@@ -1,23 +1,42 @@
+const slides = document.querySelectorAll('.carousel-img');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+
 let current = 0;
-const slides = document.querySelectorAll(".carousel-img");
-const total = slides.length;
+let slideInterval = setInterval(nextSlide, 2000); // 2 segundos automático
 
 function showSlide(index) {
-  slides.forEach(s => s.classList.remove("active"));
-  slides[index].classList.add("active");
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+  current = index;
 }
 
 function nextSlide() {
-  current = (current + 1) % total;
-  showSlide(current);
+  let nextIndex = (current + 1) % slides.length;
+  showSlide(nextIndex);
 }
 
 function prevSlide() {
-  current = (current - 1 + total) % total;
-  showSlide(current);
+  let prevIndex = (current - 1 + slides.length) % slides.length;
+  showSlide(prevIndex);
 }
 
-document.querySelector(".next").addEventListener("click", nextSlide);
-document.querySelector(".prev").addEventListener("click", prevSlide);
+// Botones
+if (nextBtn && prevBtn) {
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+  });
 
-setInterval(nextSlide, 2000);
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+  });
+}
+
+// Reiniciar autoplay al hacer clic
+function resetInterval() {
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 2000);
+}
