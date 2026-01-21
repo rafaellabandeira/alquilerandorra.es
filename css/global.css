@@ -190,7 +190,7 @@ header p {
 /* Hero header para index */
 .hero {
   /* Placeholder image, should serve until updated */
-  background-image: linear-gradient(rgba(10, 12, 10, 0.45), rgba(10, 12, 10, 0.25)), url('../images/grandvalira1.jpg');
+  background-image: linear-gradient(rgba(10, 12, 10, 0.45), rgba(10, 12, 10, 0.25)), url('../images/header.jpg');
   background-size: cover;
   background-position: center;
   color: white;
