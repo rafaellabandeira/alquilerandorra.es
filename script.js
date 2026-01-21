@@ -1,8 +1,13 @@
-const slides = document.querySelectorAll('.carousel-img');
-let index = 0;
+let currentSlide = 0;
+const slides = document.querySelectorAll(".carousel-img");
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
 
 setInterval(() => {
-  slides[index].classList.remove('active');
-  index = (index + 1) % slides.length;
-  slides[index].classList.add('active');
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
 }, 2000);
