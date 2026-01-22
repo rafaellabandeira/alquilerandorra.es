@@ -416,4 +416,23 @@ footer a:hover {
   h3 {
     font-size: 22px;
   }
+
+}
+
+/* ===== FIX HERO EN MÓVIL ===== */
+@media (max-width: 767px) {
+
+  .hero {
+    min-height: 55vh;
+    background-position: center top;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
 }
