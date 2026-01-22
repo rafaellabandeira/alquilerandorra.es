@@ -436,3 +436,12 @@ footer a:hover {
   }
 
 }
+@media (max-width: 767px) and (orientation: portrait) {
+  .hero {
+    min-height: 320px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
