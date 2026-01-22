@@ -444,4 +444,24 @@ footer a:hover {
     background-position: center top;
   }
 }
+/* =========================
+   HERO IMAGE DEFINITIVO
+   ========================= */
+
+/* Desktop y tablet: imagen impactante */
+.hero {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Móvil vertical: imagen completa */
+@media (max-width: 767px) and (orientation: portrait) {
+  .hero {
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 320px;
+  }
+}
+
 
