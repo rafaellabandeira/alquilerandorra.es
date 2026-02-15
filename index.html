@@ -165,7 +165,6 @@
       <div class="carousel-slide active"><img src="images/1000150795.jpg" alt="Exterior de las cabañas en Riópar"></div>
       <div class="carousel-slide"><img src="images/1000150768.jpg" alt="Exterior de las cabañas en Riópar"></div>
       <div class="carousel-slide"><img src="images/1000150758.jpg" alt="Exterior de las cabañas en Riópar"></div>
-      <!-- resto de imágenes como en tu HTML original -->
     </div>
     <button class="carousel-button prev">❮</button>
     <button class="carousel-button next">❯</button>
@@ -173,7 +172,6 @@
       <div class="indicator active"></div>
       <div class="indicator"></div>
       <div class="indicator"></div>
-      <!-- resto de indicadores -->
     </div>
   </div>
   <p style="text-align:center; font-size:14px; color:#999; margin-top:16px;">Desliza o usa los botones para ver más fotos</p>
@@ -308,7 +306,7 @@ function calcularReserva(){
     if(!esTemporadaAlta(entrada)&&noches>=3 && !incluyeFinDeSemana(entrada,noches)){
       descuento=total*0.10; total*=0.90;
     }
-    if(esTemporadaAlta(entrada)&&noches>=6){
+    if(esTemporadaAlta(entrada)&&noches>=7){
       descuento=total*0.10; total*=0.90;
     }
 
