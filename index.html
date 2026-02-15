@@ -3,32 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Alquiler Andorra | Apartamentos a pie de pistas</title>
-
-  <meta name="description" content="Apartamentos a pie de pistas en Grandvalira y Cerler. Disfruta de la nieve en invierno y la montaña en verano. Reserva directa.">
-  <meta name="keywords" content="alquiler andorra, grandvalira, cerler, apartamentos esquí, pie de pistas">
-  <link rel="canonical" href="https://alquilerandorra.es">
-  <!-- <link rel="icon" href="images/favicon.svg" type="image/svg+xml"> -->
-  
+  <title>Cabañas Río Mundo | Casas Rurales en Riópar</title>
+  <meta name="description" content="Cabañas rurales en Riópar, junto al Nacimiento del Río Mundo. Piscina en verano, entorno natural y contacto directo por WhatsApp.">
+  <meta name="keywords" content="cabañas río mundo, casas rurales riópar, alojamiento rural albacete">
+  <link rel="canonical" href="https://casaruralriomundo.es">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
+
+  <!-- ===== CSS MOTOR RESERVAS ===== -->
+  <style>
+    .reserva-box{
+      border:2px solid #e3e3e3;
+      padding:25px;
+      max-width:480px;
+      margin:40px auto;
+      border-radius:12px;
+      background:#fafafa;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+    .reserva-box label{
+      display:block;
+      margin-top:15px;
+      font-weight:600;
+    }
+    .reserva-box input, .reserva-box select{
+      width:100%;
+      padding:10px;
+      margin-top:5px;
+      border-radius:6px;
+      border:1px solid #ccc;
+    }
+    .reserva-box button{
+      margin-top:20px;
+      padding:12px;
+      width:100%;
+      background:#2f5d50;
+      color:white;
+      border:none;
+      border-radius:6px;
+      font-size:16px;
+      cursor:pointer;
+    }
+    .reserva-box button:hover{
+      background:#25473d;
+    }
+    .spinner{
+      margin:20px auto;
+      width:35px;
+      height:35px;
+      border:4px solid #ddd;
+      border-top:4px solid #2f5d50;
+      border-radius:50%;
+      animation:spin 1s linear infinite;
+      display:none;
+    }
+    @keyframes spin{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(360deg);}
+    }
+    .calendario{
+      display:flex;
+      flex-wrap:wrap;
+      max-width:480px;
+      margin:20px auto;
+      font-size:14px;
+    }
+    .dia{
+      width:14.28%;
+      text-align:center;
+      padding:5px 0;
+      margin:1px 0;
+      border-radius:4px;
+      color:white;
+      cursor:default;
+    }
+    .ocupado{background:#d9534f;}
+    .libre{background:#5cb85c;}
+  </style>
 </head>
 
 <body>
-
 <nav class="navbar">
   <div class="nav-container">
-    <a href="index.html" class="nav-logo">🏔️ Alquiler Andorra</a>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <a href="index.html" class="nav-logo">🏡 Cabañas Río Mundo</a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="nav-menu" id="navMenu">
-      <li><a href="#" class="nav-link">Inicio</a></li>
-      <li><a href="#apartamentos" class="nav-link">Apartamentos</a></li>
-      <li><a href="#galeria" class="nav-link">Galería</a></li>
+      <li><a href="cabana-campanilla.html" class="nav-link">Campanilla</a></li>
+      <li><a href="cabana-el-tejo.html" class="nav-link">El Tejo</a></li>
+      <li><a href="https://casaruralriomundo.wordpress.com/" class="nav-link" target="_blank" rel="noopener">Experiencias</a></li>
       <li><a href="#contacto" class="nav-link">Contacto</a></li>
     </ul>
   </div>
@@ -37,267 +101,240 @@
 <header class="hero">
   <div class="header-inner">
     <div class="header-text">
-      <h1 class="hero-title">Grandvalira-Andorra Cerler-Huesca  <span>Apartamentos a pie de pistas de esquí</span></h1>
-      <p class="hero-sub">❄️ Nieve, esquí y comodidad en invierno</p>
-      <p class="hero-sub">☀️ Montaña, rutas y naturaleza en verano</p>
+      <h1 class="hero-title">Casas rurales en Riópar · <span>Complejo El Lagunazo</span></h1>
+      <p class="hero-sub">Escapadas, naturaleza y tranquilidad junto al espectacular Nacimiento del Río Mundo, dentro del Parque Natural</p>
     </div>
   </div>
 </header>
 
 <section>
-  <h2>Tu experiencia en la montaña</h2>
+  <h2>Tu escapada rural en Riópar</h2>
   <p>
-    Bienvenido a <strong>Alquiler Andorra</strong>. 
-    Les ofrecemos una selección de apartamentos exclusivos situados estratégicamente a pie de pistas en Grandvalira (Andorra) con más de 300 km esquiables y Cerler (Huesca) con más de 80 km.
-    Alojamientos totalmente equipados para que disfrutes tanto de la temporada de esquí como de la tranquilidad de la montaña en verano. 
-    <strong>Pueden reservar directamente con nosotros o en los enlaces de Airbnb</strong>
+    Bienvenido a Cabañas Río Mundo, disponemos de dos acogedoras cabañas rurales, con todas las comodidades, situadas en el
+    exclusivo complejo El Lagunazo de Riópar, con un lago privado, a muy pocos minutos del Nacimiento del Río Mundo.
+    Un entorno natural ideal para descansar, disfrutar en familia o realizar
+    escapadas románticas durante todo el año.
   </p>
 </section>
 
-<section id="apartamentos">
-  <h2>Nuestros Apartamentos</h2>
-
-  <div class="apartamentos-grid">
-    
-    <!-- Apartamento 1 -->
-    <div class="apartamento-card">
-      <h3>Soldeu-Andorra</h3>
-      <h3>Pleta de Soldeu · B-3-4</h3>
-      <p>👥 4 personas · Soldeu</p>
-      <p>❄️ A pie de pistas</p>
-      <p>🎿 Ideal para esquí</p>
-      <p>☀️ Rutas de montaña, senderismo</p>
-      <a href="https://www.airbnb.es/rooms/15004000" target="_blank" rel="noopener">Reservar en Airbnb</a>
+<section>
+  <h2>Nuestras exclusivas Cabañas</h2>
+  <div class="cabanias-grid">
+    <div class="cabin-card">
+      <h3>Cabaña Campanilla</h3>
+      <p>Capacidad para hasta 6 personas, dispone de 2 habitaciones y un altillo, perfecta para familias o grupos.</p>
+      <a class="boton" href="cabana-campanilla.html">Ver Cabaña Campanilla</a>
+      <div id="calendario-campanilla" class="calendario"></div>
     </div>
-
-    <!-- Apartamento 2 -->
-    <div class="apartamento-card">
-      <h3>Soldeu-Andorra</h3>
-      <h3>Pleta de Soldeu · C-2-1</h3>
-      <p>👥 5 personas</p>
-      <p>❄️ A pie de pistas</p>
-      <p>🌄 Vistas a la montaña</p>
-      <p>☀️ Senderismo</p>
-      <a href="https://www.airbnb.es/rooms/14928857" target="_blank" rel="noopener">Reservar en Airbnb</a>
+    <div class="cabin-card">
+      <h3>Cabaña El Tejo</h3>
+      <p>Cabaña para hasta 4 personas, ideal para parejas o pequeñas familias que buscan tranquilidad y naturaleza.</p>
+      <a class="boton" href="cabana-el-tejo.html">Ver Cabaña El Tejo</a>
+      <div id="calendario-tejo" class="calendario"></div>
     </div>
-
-    <!-- Apartamento 3 -->
-    <div class="apartamento-card">
-      <h3>Soldeu-Andorra</h3>
-      <h3>Pleta de Soldeu · 3-2-7</h3>
-      <p>👥 5 personas</p>
-      <p>🎿 Ideal para esquí</p>
-      <p>❄️ Cercano a pistas</p>
-      <p>☀️ Rutas señalizadas</p>
-      <a href="https://www.airbnb.es/rooms/16438941" target="_blank" rel="noopener">Reservar en Airbnb</a>
-    </div>
-
-    <!-- Apartamento 4 -->
-    <div class="apartamento-card">
-      <h3>El Tarter-Andorra</h3>
-      <h3>Ático Edificio Malva</h3>
-      <p>👥 5 personas</p>
-      <p>❄️ A pie de pistas</p>
-      <p>🎿 Frente a pistas</p>
-      <p>🌄 Vistas a la montaña</p>
-      <p>☀️ Senderos y rutas de montaña</p>
-      <a href="https://www.airbnb.es/rooms/30303046" target="_blank" rel="noopener">Reservar en Airbnb</a>
-    </div>
-
-    <!-- Apartamento 5 -->
-    <div class="apartamento-card">
-      <h3>El Tarter-Andorra</h3>
-      <h3>El Tarter · 4-B</h3>
-      <p>👥 3 personas</p>
-      <p>🎿 Vistas a pistas</p>
-      <p>🌄 Vistas a la montaña</p>
-      <p>☀️ Valle y naturaleza</p>
-      <a href="https://www.airbnb.es/rooms/4256746" target="_blank" rel="noopener">Reservar en Airbnb</a>
-    </div>
-
-    <!-- Apartamento 6 -->
-    <div class="apartamento-card">
-      <h3>El Tarter-Andorra</h3>
-      <h3>L’Avet · 2-1</h3>
-      <p>👥 4 personas</p>
-      <p>🎿 Frente a pistas</p>
-      <p>🌄 Vistas a la montaña</p>
-      <p>☀️ Senderismo, rutas de montaña</p>
-      <a href="https://www.airbnb.es/rooms/15831723" target="_blank" rel="noopener">Reservar en Airbnb</a>
-    </div>
-
-    <!-- Apartamento 7 -->
-    <div class="apartamento-card">
-      <h3>El Tarter-Andorra</h3>
-      <h3>Bellesguard · Chalet</h3>
-      <p>👥 6 personas</p>
-      <p>🎿 Grandes vistas</p>
-      <p>🎿 Frente a pistas</p>
-      <p>🌄 Vistas a la montaña</p>
-      <p>☀️ Rutas de montaña</p>
-      <a href="https://www.airbnb.es/rooms/29563534" target="_blank" rel="noopener">Reservar en Airbnb</a>
-    </div>
-
-    <!-- Apartamento 8 -->
-    <div class="apartamento-card">
-      <h3>Cerler-Huesca</h3>
-      <h3>Aiguallur Cerler · A-4</h3>
-      <p>👥 4 personas</p>
-      <p>🎿 Vistas al valle</p>
-      <p>🎿 Grandes vistas a pistas</p>
-      <p>🌄 Vistas a la montaña</p>
-      <p>☀️ Valle de Benasque en verano</p>
-      <a href="https://www.airbnb.es/rooms/1096091527741897588" target="_blank" rel="noopener">Reservar en Airbnb</a>
-    </div>
-
   </div>
 </section>
 
-<section id="galeria">
-  <h2>Galería de Fotos</h2>
-  
-  <div class="carousel-container">
+<section>
+  <h2>Piscina en temporada de verano</h2>
+  <p>
+    Durante los meses de verano, nuestros huéspedes pueden disfrutar de una piscina en plena naturaleza y totalmente rodeados de pinos
+    convirtiendo la estancia en una experiencia, única, refrescante y perfecta para los
+    días más calurosos.
+  </p>
+  <div class="carousel-container small">
     <div class="carousel">
-      <!-- Grandvalira Images -->
-      <div class="carousel-slide active">
-        <img src="images/grandvalira1.jpg" alt="Grandvalira 1">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira2.jpg" alt="Grandvalira 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira3.jpg" alt="Grandvalira 3">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira4.jpg" alt="Grandvalira 4">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira5.jpg" alt="Grandvalira 5">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira6.jpg" alt="Grandvalira 6">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira7.jpg" alt="Grandvalira 7">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira8.jpg" alt="Grandvalira 8">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira9.jpg" alt="Grandvalira 9">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/grandvalira10.jpg" alt="Grandvalira 10">
-      </div>
-
-      <!-- Pleta Images -->
-      <div class="carousel-slide">
-        <img src="images/pleta1.jpg" alt="Pleta de Soldeu 1">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/pleta2.jpg" alt="Pleta de Soldeu 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/pleta3.jpg" alt="Pleta de Soldeu 3">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/pleta4.jpg" alt="Pleta de Soldeu 4">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/pleta5.jpg" alt="Pleta de Soldeu 5">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/pleta6.jpg" alt="Pleta de Soldeu 6">
-      </div>
-
-      <!-- Cerler Images -->
-      <div class="carousel-slide">
-        <img src="images/cerler1.jpg" alt="Cerler 1">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler2.jpg" alt="Cerler 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler3.jpg" alt="Cerler 3">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler4.jpg" alt="Cerler 4">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler5.jpg" alt="Cerler 5">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler6.jpg" alt="Cerler 6">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler7.jpg" alt="Cerler 7">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler8.jpg" alt="Cerler 8">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler9.jpg" alt="Cerler 9">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler10.jpg" alt="Cerler 10">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler11.jpg" alt="Cerler 11">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler12.jpg" alt="Cerler 12">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler13.jpg" alt="Cerler 13">
-      </div>
-      <div class="carousel-slide">
-        <img src="images/cerler14.jpg" alt="Cerler 14">
-      </div>
+      <div class="carousel-slide"><img src="images/1000173041.jpg" alt="Piscina en verano - detalle"></div>
+      <div class="carousel-slide"><img src="images/1000173042.jpg" alt="Piscina en verano - detalle"></div>
+      <div class="carousel-slide"><img src="images/1000173044.jpg" alt="Piscina en verano - detalle"></div>
     </div>
-    
     <button class="carousel-button prev">❮</button>
     <button class="carousel-button next">❯</button>
-    
     <div class="carousel-indicators">
-      <!-- Generated indicators for some slides to avoid cluttering or just a few -->
       <div class="indicator active"></div>
       <div class="indicator"></div>
       <div class="indicator"></div>
-      <div class="indicator"></div>
-      <div class="indicator"></div>
     </div>
   </div>
+</section>
 
-  <p style="text-align: center; font-size: 14px; color: #999; margin-top: 16px;">
-    Desliza o usa los botones para ver más fotos
-  </p>
+<section>
+  <h2>Galería de Fotos</h2>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide active"><img src="images/1000150795.jpg" alt="Exterior de las cabañas en Riópar"></div>
+      <div class="carousel-slide"><img src="images/1000150768.jpg" alt="Exterior de las cabañas en Riópar"></div>
+      <div class="carousel-slide"><img src="images/1000150758.jpg" alt="Exterior de las cabañas en Riópar"></div>
+      <!-- resto de imágenes como en tu HTML original -->
+    </div>
+    <button class="carousel-button prev">❮</button>
+    <button class="carousel-button next">❯</button>
+    <div class="carousel-indicators">
+      <div class="indicator active"></div>
+      <div class="indicator"></div>
+      <div class="indicator"></div>
+      <!-- resto de indicadores -->
+    </div>
+  </div>
+  <p style="text-align:center; font-size:14px; color:#999; margin-top:16px;">Desliza o usa los botones para ver más fotos</p>
+</section>
+
+<section>
+  <h2>Ubicación</h2>
+  <p>📍 Complejo EL Lagunazo, Riópar</p>
+  <iframe src="https://www.google.com/maps?q=38.4880635,-2.4343093&z=17&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!-- ================= MOTOR DE RESERVAS COMPLETO ================= -->
+<section id="reserva-online">
+  <h2>Reserva Online</h2>
+  <div class="reserva-box">
+    <label>Cabaña</label>
+    <select id="cabaña">
+      <option value="campanilla">Campanilla</option>
+      <option value="tejo">El Tejo</option>
+    </select>
+    <label>Nombre completo</label>
+    <input type="text" id="nombre" placeholder="Tu nombre" required>
+    <label>Teléfono</label>
+    <input type="tel" id="telefono" placeholder="Ej: 620419157" required>
+    <label>Email</label>
+    <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+    <label>Fecha de entrada</label>
+    <input type="date" id="entrada">
+    <label>Fecha de salida</label>
+    <input type="date" id="salida">
+    <button onclick="calcularReserva()">Calcular precio</button>
+    <div class="spinner" id="spinner"></div>
+    <div id="resultado" style="display:none;">
+      <p><strong>Total estancia:</strong> <span id="total"></span> €</p>
+      <p><strong>Descuento aplicado:</strong> <span id="descuento"></span> €</p>
+      <p><strong>Reserva ahora:</strong> 50 €</p>
+      <p><strong>Resto a pagar en alojamiento:</strong> <span id="resto"></span> €</p>
+      <button onclick="reservar()">Pagar</button>
+    </div>
+  </div>
 </section>
 
 <section id="contacto">
   <h2>Contacto y Reservas</h2>
-  <p>
-  Para cualquier consulta o reserva directa, contáctanos por WhatsApp.
-  </p>
-  <p>
-    📱 <a href="https://wa.me/34620419157">WhatsApp 620 41 91 57</a>
-  </p>
+  <p>Las reservas se gestionan directamente por WhatsApp para una atención personalizada y sin intermediarios.</p>
+  <p>📱 <a href="https://wa.me/34620419157">WhatsApp 620 419 157</a></p>
 </section>
 
 <footer>
-  <p>© 2026 Alquiler Andorra</p>
-  <p>
-    <a href="aviso-legal.html">Aviso Legal</a> |
-    <a href="privacidad.html">Política de Privacidad</a> |
-    <a href="cookies.html">Política de Cookies</a>
-  </p>
+  <p><a href="aviso-legal.html">Aviso Legal</a> | <a href="privacidad.html">Política de Privacidad</a> | <a href="cookies.html">Política de Cookies</a></p>
+  <p>© Cabañas Río Mundo · Riópar</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/34620419157" title="Contacta por WhatsApp" target="_blank">
+<a class="whatsapp" href="https://wa.me/34620419157" title="Contacta por WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
   </svg>
 </a>
 
 <script src="js/main.js"></script>
-</body>
-</html>
+<script>
+/* ================= SCRIPT MOTOR RESERVAS ================= */
+const backendURL = "https://rafaellabandeira-github-io.onrender.com";
+const fechasOcupadas = {
+  campanilla: ["2026-02-20","2026-02-21","2026-02-22"],
+  tejo: ["2026-02-23","2026-02-24"]
+};
+
+function esTemporadaAlta(fecha){
+  const f=new Date(fecha);
+  const mes=f.getMonth()+1;
+  const dia=f.getDate();
+  if(mes==7||mes==8) return true;
+  if((mes==12&&dia>=22)||(mes==1&&dia<=7)) return true;
+  return false;
+}
+
+function incluyeFinDeSemana(fechaEntrada,noches){
+  for(let i=0;i<noches;i++){
+    const d=new Date(fechaEntrada);
+    d.setDate(d.getDate()+i);
+    const dia=d.getDay();
+    if(dia==5||dia==6) return true;
+  }
+  return false;
+}
+
+function mostrarCalendario(idCabaña,elemento){
+  const hoy=new Date();
+  elemento.innerHTML="";
+  for(let i=0;i<30;i++){
+    const dia=new Date(hoy);
+    dia.setDate(hoy.getDate()+i);
+    const diaStr=dia.toISOString().split("T")[0];
+    const span=document.createElement("div");
+    span.classList.add("dia");
+    span.innerText=dia.getDate();
+    if(fechasOcupadas[idCabaña].includes(diaStr)){
+      span.classList.add("ocupado");
+    }else{
+      span.classList.add("libre");
+    }
+    elemento.appendChild(span);
+  }
+}
+
+mostrarCalendario("campanilla",document.getElementById("calendario-campanilla"));
+mostrarCalendario("tejo",document.getElementById("calendario-tejo"));
+
+function calcularReserva(){
+  document.getElementById("spinner").style.display="block";
+  document.getElementById("resultado").style.display="none";
+  setTimeout(()=>{
+    const entrada=document.getElementById("entrada").value;
+    const salida=document.getElementById("salida").value;
+    const cabaña=document.getElementById("cabaña").value;
+    const nombre=document.getElementById("nombre").value.trim();
+    const telefono=document.getElementById("telefono").value.trim();
+    const email=document.getElementById("email").value.trim();
+
+    if(!entrada||!salida||!nombre||!telefono||!email){alert("Rellena todos los campos");document.getElementById("spinner").style.display="none";return;}
+
+    const noches=(new Date(salida)-new Date(entrada))/(1000*60*60*24);
+    let precioNoche=esTemporadaAlta(entrada)?150:115;
+
+    if(esTemporadaAlta(entrada)&&noches<4){alert("En temporada alta mínimo 4 noches");document.getElementById("spinner").style.display="none";return;}
+    if(!esTemporadaAlta(entrada)&&noches<2){alert("Mínimo 2 noches");document.getElementById("spinner").style.display="none";return;}
+
+    let total=noches*precioNoche;
+    let descuento=0;
+
+    if(!esTemporadaAlta(entrada)&&noches>=3 && !incluyeFinDeSemana(entrada,noches)){
+      descuento=total*0.10; total*=0.90;
+    }
+    if(esTemporadaAlta(entrada)&&noches>=6){
+      descuento=total*0.10; total*=0.90;
+    }
+
+    const resto=total-50;
+
+    document.getElementById("total").innerText=total.toFixed(2);
+    document.getElementById("descuento").innerText=descuento.toFixed(2);
+    document.getElementById("resto").innerText=resto.toFixed(2);
+
+    document.getElementById("spinner").style.display="none";
+    document.getElementById("resultado").style.display="block";
+
+  },800);
+}
+
+function reservar(){
+  const entrada=document.getElementById("entrada").value;
+  const salida=document.getElementById("salida").value;
+  const cabaña=document.getElementById("cabaña").value;
+  const nombre=document.getElementById("nombre").value.trim();
+  const telefono=document.getElementById("telefono").value.trim();
+  const email=document.getElementById("email").value.trim();
+
+  fetch(`${backendURL}/reservar`,{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({cabaña,nombre,telefono,email,entrada,salida})
+  }).then(res=>res.json())
+   
